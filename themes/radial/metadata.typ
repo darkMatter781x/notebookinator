@@ -11,7 +11,8 @@
   "program": (icon: icons.terminal, color: purple),
   "test": (icon: icons.flask, color: green),
   "management": (icon: icons.bar-chart, color: surface-4),
-  "notebook": (icon: icons.page, color: pink),
+  "notebook": (icon: icons.page, color: gray),
+  "concept": (icon: icons.page, color: pink),
 )
 
 #let admonition-type-metadata = (
