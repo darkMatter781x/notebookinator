@@ -22,7 +22,7 @@
       #h(5pt)
       #entry.title
       #box(width: 1fr, line(length: 100%, stroke: (dash: "dotted")))
-      #entry.page-number
+      P#entry.page-number
     ],)
   })
 

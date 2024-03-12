@@ -13,7 +13,7 @@
 #let frontmatter-entry(context: (:), body) = {
   show: page.with(
     header: components.title(context.title),
-    footer: align(right, counter(page).display("i")),
+    footer: align(right, "P-" + counter(page).display("i")),
   )
   body
 }
@@ -33,7 +33,7 @@
     #align(left, [
       *Designed by:* #context.author #h(2pt) \
       *Witnessed by:* #context.witness
-      #h(1fr) #counter(page).display()
+      #h(1fr) P#counter(page).display()
     ])
   ])
   body
@@ -42,7 +42,7 @@
 #let appendix-entry(context: (:), body) = {
   show: page.with(
     header: components.title(context.title),
-    footer: align(right, counter(page).display()),
+    footer: align(right, "P" + counter(page).display()),
   )
 
   body
